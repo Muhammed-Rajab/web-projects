@@ -1,0 +1,139 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@600;700&family=Hind:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@600;700&family=Hind:wght@500&family=Open+Sans+Condensed:ital,wght@0,300;1,300&display=swap');
+
+html, body { 
+    height: 100%; 
+    width: 100%; 
+    margin: 0; 
+}
+*{
+    box-sizing: border-box;
+}
+/* Main container properties */
+.container-wrapper{
+    height: 100vh;
+    background-image: url("img/background1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-y: hidden;
+}
+.container{
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: relative;
+}
+
+/* Navbar properties */
+.navbar{
+    /* background-color: black; */
+    height: 3.5rem;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    position: absolute;
+}
+.left-nav{
+    width: 100%;
+    height: 100%;
+    /* background-color: rebeccapurple; */
+    padding-left: 2%;
+}
+.right-nav{
+    width: 100%;
+    /* background-color: blanchedalmond; */
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 2%;
+}
+/* Inside left nav */
+/* Inside right nav */
+.right-nav > form > input{
+    line-height: 2rem;
+    border: 0;
+    border-bottom: white;
+    background-color: transparent;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.1rem;
+    border-bottom: 2px solid white;
+}
+/* Change place holder color */
+::placeholder {
+    color: rgb(223, 223, 223);
+    opacity: 1;
+  }
+  
+  :-ms-input-placeholder {
+    color: rgb(223, 223, 223);
+  }
+  
+  ::-ms-input-placeholder {
+    color: rgb(223, 223, 223);
+}
+/* Changing input box active and focus events */
+.right-nav > form > input:active, .right-nav > form > input:focus{
+    outline: none;
+}
+/* Navbar ends here */
+/* header starts here*/
+.header-wrapper{
+    height: 100%;
+    /* background-color: antiquewhite; */
+}
+.header{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.time{
+    
+}
+#time{
+    color: white;
+    font-family: 'Cabin', sans-serif;
+    font-size: 10rem;
+    font-weight: 500 !important;
+}
+.greeting-wrapper{
+
+}
+.greeting{
+    color: white;
+    font-size: 3.5rem;
+    font-family: 'Cabin', sans-serif;
+    animation-delay: 2s;
+}
+/* quote */
+.quote-wrapper{
+    width: 100%;
+    position: absolute;
+    bottom: 1%;
+    display: flex;
+    justify-content: center;
+}
+#quote{
+    color: white;
+    display: inline-block;
+    font-weight: 400;
+    font-family: 'Open Sans Condensed', sans-serif;
+    animation-delay: 3s;
+}
+/*Media Queries*/
+@media (max-width: 768px){
+    .navbar{
+        display: none;
+    }
+    #time{
+        font-size: 8rem;
+    }
+    .greeting{
+        font-size: 2rem;
+    }
+}
